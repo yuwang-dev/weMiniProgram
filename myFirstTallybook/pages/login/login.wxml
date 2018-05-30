@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>获取头像昵称</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode='cover'></image>
+      </block>
+  </view>
+  <view class="usermotto">
+    <text wx:if="{{motto != 'Hello World'}}" class="user-motto">{{motto}}</text>
+    <text wx:else>您好，世界～</text>
+    <text class="my-class">{{myText}}</text>
+  </view>
+  <view>
+    <button bindtap="myEventHandle">按钮</button>
+  </view>
+</view>
