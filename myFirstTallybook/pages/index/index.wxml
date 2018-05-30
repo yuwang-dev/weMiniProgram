@@ -8,7 +8,9 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <text wx:if="{{motto != 'Hello World'}}" class="user-motto">{{motto}}</text>
+    <text wx:else>你好，世界～</text>
+    <!--for test-->
     <text class='my-class'>{{myText}}</text>
   </view>
   <view>

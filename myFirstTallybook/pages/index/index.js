@@ -16,7 +16,7 @@ Page({
       url: '../logs/logs'
     })
   },
-  //自定义事件
+  //自定义事件for test
   myEventHandle: function(){
     this.setData({myText:'同一个世界同一个梦想'});
   },
